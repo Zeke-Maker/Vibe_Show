@@ -1,7 +1,7 @@
 [project]
 name = "vibe-show"
 version = "0.1.0"
-description = ""
+description = "Software para shows"
 authors = [
     {name = "Ezequias Ribamar",email = "ezequiasribamar3@gmail.com"}
 ]
