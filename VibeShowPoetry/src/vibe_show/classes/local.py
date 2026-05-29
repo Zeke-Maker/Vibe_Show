@@ -15,8 +15,6 @@ class Escolher_Assento:
         else:
             print("Vaga não disponivel")
         
-        
-
 assentos = Escolher_Assento()
 
 assentos.vagas_totais()
