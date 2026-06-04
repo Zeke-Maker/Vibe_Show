@@ -19,9 +19,16 @@ class Pagamento:
                     break
 
         return self.codigo
-        
-cadeira1 = Pagamento(True)
 
-codigo = cadeira1.get_codigo()
 
-print(codigo)
+quantidade = int(input("Quantos ingressos deseja comprar? "))
+
+for i in range(quantidade):
+    resposta = input(f"Pagamento do ingresso {i+1} foi realizado? (s/n): ")
+
+    if resposta.lower() == "s":
+        ingresso = Pagamento(True)
+        print(f"Ingresso {i+1} confirmado!")
+        print(f"Código: {ingresso.get_codigo()}\n")
+    else:
+        print(f"Ingresso {i+1} não foi pago.\n")
