@@ -1,7 +1,7 @@
 class Usuario:
     usuarios_cadastrados = {}
 
-    def __init__(self, nome, email, senha):
+    def __init__(self, nome=None, email=None, senha=None):
         self.nome = nome
         self.email = email
         self.senha = senha
@@ -39,41 +39,3 @@ class Usuario:
         else:
             print("Email não encontrado.")
 
-while True:
-
-    print("\n1 - Cadastrar")
-    print("2 - Login")
-    print("3 - Recuperar senha")
-    print("4 - Sair")
-
-    opcao = input("Escolha uma das opções anteriores: ")
-
-    if opcao == "1":
-
-        nome = input("Digite seu nome: ")
-        email = input("Digite seu email: ")
-        senha = input("Digite sua senha: ")
-
-        Usuario.cadastrar(nome, email, senha)
-
-
-    elif opcao == "2":
-
-        email = input("Digite seu email: ")
-        senha = input("Digite sua senha: ")
-
-        Usuario.login(email, senha)
-
-    elif opcao == "3":
-
-        email = input("Digite seu email: ")
-
-        Usuario.recuperar_senha(email)
-
-    elif opcao == "4":
-
-        print("Encerrando sistema...")
-        break
-
-    else:
-        print("Opção inválida.")

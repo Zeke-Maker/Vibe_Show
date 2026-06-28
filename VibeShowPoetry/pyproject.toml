@@ -1,5 +1,5 @@
 [project]
-name = "vibe-show"
+name = "vibe_show"
 version = "0.1.0"
 description = "Software para shows"
 authors = [
@@ -16,3 +16,6 @@ packages = [{include = "vibe_show", from = "src"}]
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+vibe_show = "vibe_show.main:main"
